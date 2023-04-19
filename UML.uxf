@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>280</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Flight
+--
+-belongsTo: Airline
+-date: LocalDate
+-destination: String
+-cancelled: boolean
+-flightDuration: double
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>70</x>
+      <y>280</y>
+      <w>210</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Airline
+--
+-name: String
+-location: String
+-rating: double
+-employeeCount: int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>340</y>
+      <w>170</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=1
+m2=0..n
+belongs to</panel_attributes>
+    <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
+  </element>
+</diagram>
